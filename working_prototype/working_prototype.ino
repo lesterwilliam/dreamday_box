@@ -36,7 +36,6 @@ RTClib RTC;
 const long hammock_unixtime = 1403913000;
 const long correction_unixtime = 1638043;
 
-
 // 8x8 Led matrix pictures
 const unsigned int test_matrix[8]         = {0x00, 0x00, 0x00, 0x00, 0x01, 0x01, 0x01, 0x00};
 const unsigned int matrix_heart_small[8]  = {0x30, 0x78, 0x7C, 0x3E, 0x3E, 0x7C, 0x78, 0x30};
