@@ -80,7 +80,7 @@ void writeMatrix_randError(){
   for(int i = 0; i < 8; i++){
     unsigned int value = matrix_heart_big[i];
     if(random(0,9) < 9){
-      value &= ~(random(0,255));
+      value &= ~(random(0,255) & random(0,255) & random(0,255) & random(0,255) & random(0,255) & random(0,255) & random(0,255));
     }
     //value &= ~(1UL << random(0,8));
     digitalWrite(CS_DOT, LOW);
@@ -193,5 +193,5 @@ void loop() {
   writeDigits(getYearSince());
   
   writeMatrix_randError();
-  delay(20);
+  delay(200);
 }
