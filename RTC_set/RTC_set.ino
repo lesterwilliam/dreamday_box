@@ -25,7 +25,7 @@ void setup () {
     rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
     // This line sets the RTC with an explicit date & time, for example to set
     // January 21, 2014 at 3am you would call:
-    rtc.adjust(DateTime(2020, 2, 28, 10, 6, 35));
+    // rtc.adjust(DateTime(2020, 2, 28, 10, 6, 35));
   
 }
 
