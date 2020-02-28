@@ -35,6 +35,7 @@ RTClib RTC;
 
 // Special date in unixtime code
 const long hammock_unixtime = 1403913000;
+const long parents_unixtime = 130204800;
 const long correction_unixtime = 1638043;
 
 // 8x8 Led matrix pictures
@@ -132,7 +133,7 @@ void writeDot(uint8_t row, uint8_t col){
 long getYearSince(){
   DateTime unixNow = RTC.now();
   
-  return (long)((unixNow.unixtime() - hammock_unixtime + correction_unixtime) / 86400);
+  return (long)((unixNow.unixtime() - parents_unixtime) / 86400);
 }
 
 void setup() {
